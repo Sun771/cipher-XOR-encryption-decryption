@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>XOR-encryption-decryption</title>
+</head>
+
+<body>
+  <div class="global-container">
+    <div class="container-for-input">
+      <h1>XOR-encryption-decryption</h1>
+      <div class="container-buttons-key">
+        <div class="container-buttons">
+          <button class="encrypt button-style">
+            Encrypt
+          </button>
+          <button class="decrypt button-style">
+            Decrypt
+          </button>
+          <button class="button-style" id="btn-clear-all">
+            Clear all
+          </button>
+        </div>
+        <textarea name="text" id="text-area" class="textarea-styling" placeholder="Enter your text here or your binary code"></textarea>
+      </div>
+      <textarea class="key-area textarea-styling" placeholder="Enter your key here"></textarea>
+    </div>
+    <div class="container-console">
+      <h2>Console</h2>
+      <div class="console-background">
+        <div id='console' class="console"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

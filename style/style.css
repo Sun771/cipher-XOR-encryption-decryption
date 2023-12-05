@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Animated gradient */
+body {
+  background: linear-gradient(-45deg, #001eff, #0091ff, #00aaff, #00fff2);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* /Animated gradient */
+
+.container-for-input h1 {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-for-input {
+  width: 500px;
+}
+
+.textarea-styling {
+  width: 100%;
+  height: 270px;
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: text;
+  resize: none;
+  overflow-y: auto;
+}
+
+.container-for-input .container-buttons-key {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* buttons styling */
+
+.button-style {
+  margin-right: 20px;
+}
+
+.button-style:last-child {
+  margin-right: 0;
+}
+
+.button-style {
+  font-size: 18px;
+  padding: 10px 25px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  border-radius: 10px; 
+  border: none;
+  transition: all ease 0.3s;
+  position: relative;
+}
+
+.button-style:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+.button-style:active {
+  transition: none; /* Remove transition declaration from :active */
+  background-color: rgb(241, 241, 241) !important;
+  color: rgb(18, 18, 18);
+}
+/* /buttons styling */
+
+.container-buttons {
+  margin: 30px auto 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Console */
+.container-console {
+  width: 500px;
+  margin: 25px 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.container-console h2 {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.console-background {
+  width: 100%;
+  height: 650px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.console {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* /Console */
+
+.global-container {
+  display: flex;
+  justify-content: center;
+}
